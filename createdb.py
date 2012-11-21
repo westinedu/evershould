@@ -29,7 +29,7 @@ def create_dbs():
             results = cur.fetchone()
             if not results:
                 print("Database %s doesn't exist, lets create it." % db_name)
-                sql = """CREATE DATABASE IF NOT EXISTS %s ENCODING = 'UTF8'""" % (db_name,)
+                sql = """CREATE DATABASE IF NOT EXISTS %s CHARACTER SET utf8 COLLATE utf8_general_ci""" % (db_name,)
                 print("> %s" % sql)
                 cur.execute(sql)
                 print(".....")
