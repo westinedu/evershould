@@ -111,10 +111,7 @@ USE_TZ = True
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = "en"
 
-LANGUAGES = (
-    ('zh-cn', 'Simplified Chinese'),
-    ('zh-tw', 'Traditional Chinese')
-    )
+
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
